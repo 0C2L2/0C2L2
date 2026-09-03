@@ -11,8 +11,8 @@
 
 <table>
 <tr>
-<td><img src="./avi-ascii.svg" alt="ASCII portrait" width="440"></td>
-<td><img src="./info-card.svg" alt="Info card" width="360"></td>
+<td><img src="./avi-ascii.svg" alt="ASCII portrait" width="330"></td>
+<td><img src="./info-card.svg" alt="Info card" width="470"></td>
 </tr>
 </table>
 
