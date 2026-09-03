@@ -68,6 +68,9 @@ your contributions, re-renders `contrib-heatmap.svg`, and commits with
 `[skip ci]` so it doesn't retrigger itself. Needs no secrets — the calendar is
 public HTML. Trigger it manually once from the Actions tab to verify.
 
+CI installs only `scripts/requirements-ci.txt` (`requests` + `beautifulsoup4`) —
+the heatmap steps need nothing else. `requirements.txt` is for local work.
+
 ## Notes / constraints
 
 - GitHub READMEs strip `<script>`, `style=` attributes, and external CSS.

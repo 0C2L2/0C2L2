@@ -1,7 +1,13 @@
+# Full local pipeline. For CI use requirements-ci.txt instead.
 requests==2.32.3
 beautifulsoup4==4.12.3
+
+# ASCII portrait pipeline (local only)
 pillow==10.4.0
 numpy==2.1.1
-# opencv-python==4.10.0.84  # optional: better local contrast (CLAHE); PIL autocontrast used if absent
-# portrait pipeline only (heavy, not needed in CI):
-rembg==2.0.83  # portrait pipeline only; heavy, exclude from CI
+
+# Optional, portrait-only, heavy — uncomment if you want them:
+#   opencv-python  -> better local contrast (CLAHE); PIL autocontrast used if absent
+#   rembg          -> background removal; downloads a ~1 GB model on first run
+# opencv-python==4.10.0.84
+# rembg==2.0.83

@@ -1,0 +1,5 @@
+# Minimal deps for the daily GitHub Actions refresh.
+# Only fetch_contributions.py + render_heatmap_svg.py run in CI, and they
+# need nothing beyond these two. Keep this list tiny so the job stays fast.
+requests==2.32.3
+beautifulsoup4==4.12.3
