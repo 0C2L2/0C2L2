@@ -7,9 +7,6 @@
 -->
 
 <div align="center">
-
-<code>0C2L2@github ~ $ ./whoami.sh</code>
-
 <br><br>
 
 <table>
@@ -21,11 +18,9 @@
 
 <br>
 
-<code>0C2L2@github ~ $ ./contributions.sh</code>
-
 <br><br>
 
-<img src="./contrib-heatmap.svg" alt="Contribution heatmap" width="740">
+<!-- <img src="./contrib-heatmap.svg" alt="Contribution heatmap" width="740"> -->
 
 <br>
 
