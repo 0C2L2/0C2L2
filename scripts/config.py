@@ -5,7 +5,7 @@ from pathlib import Path
 GITHUB_USERNAME = "0C2L2"
 
 INFO_CARD = {
-    "user_host": "rashid@github",
+    "user_host": "0C2L2@github",
     "fields": [
         ("Name",     "Rashid Tagaev"),
         ("Role",     "Integrated Systems Engineering student"),
