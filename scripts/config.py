@@ -5,13 +5,16 @@ from pathlib import Path
 GITHUB_USERNAME = "0C2L2"
 
 INFO_CARD = {
-    "user_host": "0C2L2@github",
+    "user_host": "rashid@github",
     "fields": [
-        ("Role",       "Software Engineer"),
-        ("Stack",      "Python / TypeScript / Go"),
-        ("Focus",      "Backend, tooling, automation"),
-        ("Editor",     "Neovim btw"),
-        ("Highlights", "OSS contributor, homelab tinkerer"),
+        ("Name",     "Rashid Tagaev"),
+        ("Role",     "Engineering student"),
+        ("Tagline",  "Turning curiosity into code"),
+        ("Focus",    "AI / computer vision / full-stack"),
+        ("Stack",    "Python / TypeScript / Next.js / R"),
+        ("Projects", "face_detect - GymEye - MagicFlow - NemoFlow"),
+        ("LinkedIn", "in/rashid-tagaev"),
+        ("Badges",   "YOLO - Quickdraw"),
     ],
 }
 

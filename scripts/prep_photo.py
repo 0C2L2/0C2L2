@@ -11,11 +11,15 @@ from __future__ import annotations
 
 import sys
 
-import cv2
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 
 from config import PREPPED_PHOTO, SOURCE_PHOTO
+
+try:
+    import cv2
+except ImportError:
+    cv2 = None
 
 
 def remove_background(img: Image.Image) -> Image.Image:
@@ -29,6 +33,12 @@ def remove_background(img: Image.Image) -> Image.Image:
 
 
 def clahe_contrast(rgba: Image.Image) -> Image.Image:
+    if cv2 is None:
+        print("opencv not installed; using PIL autocontrast instead",
+              file=sys.stderr)
+        r, g, b, a = rgba.split()
+        rgb = ImageOps.autocontrast(Image.merge("RGB", (r, g, b)), cutoff=1)
+        return Image.merge("RGBA", (*rgb.split(), a))
     arr = np.array(rgba)
     rgb, alpha = arr[:, :, :3], arr[:, :, 3]
     lab = cv2.cvtColor(rgb, cv2.COLOR_RGB2LAB)
