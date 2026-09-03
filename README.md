@@ -7,7 +7,7 @@
 -->
 
 <div align="center">
-<br><br>
+<!-- <br><br> -->
 
 <table>
 <tr>
@@ -16,12 +16,12 @@
 </tr>
 </table>
 
-<br>
+<!-- <br>
 
-<br><br>
+<br><br> -->
 
 <!-- <img src="./contrib-heatmap.svg" alt="Contribution heatmap" width="740"> -->
 
-<br>
+<!-- <br> -->
 
 </div>
