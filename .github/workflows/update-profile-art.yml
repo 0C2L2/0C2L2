@@ -1,0 +1,42 @@
+name: update-profile-art
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily ~06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch contributions
+        run: python scripts/fetch_contributions.py
+        working-directory: ${{ github.workspace }}
+
+      - name: Render heatmap
+        run: python scripts/render_heatmap_svg.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/contributions.json contrib-heatmap.svg
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "chore: refresh contribution heatmap [skip ci]"
+            git push
+          fi

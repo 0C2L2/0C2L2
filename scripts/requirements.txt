@@ -1,0 +1,7 @@
+requests==2.32.3
+beautifulsoup4==4.12.3
+pillow==10.4.0
+numpy==2.1.1
+opencv-python==4.10.0.84
+# portrait pipeline only (heavy, not needed in CI):
+# rembg==2.0.59
