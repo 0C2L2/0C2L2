@@ -8,13 +8,12 @@ INFO_CARD = {
     "user_host": "rashid@github",
     "fields": [
         ("Name",     "Rashid Tagaev"),
-        ("Role",     "Engineering student"),
+        ("Role",     "Integrated Systems Engineering student"),
         ("Tagline",  "Turning curiosity into code"),
-        ("Focus",    "AI / computer vision / full-stack"),
-        ("Stack",    "Python / TypeScript / Next.js / R"),
-        ("Projects", "face_detect - GymEye - MagicFlow - NemoFlow"),
+        ("Focus",    "AI · Computer vision · Software development"),
+        ("Stack",    "Python · PyTorch · scikit-learn · Pandas · NumPy · SQL"),
+        ("Projects", "face_detect · GymEye · MagicFlow · NemoFlow"),
         ("LinkedIn", "in/rashid-tagaev"),
-        ("Badges",   "YOLO - Quickdraw"),
     ],
 }
 
