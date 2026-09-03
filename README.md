@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<code>YOUR_USERNAME@github ~ $ ./whoami.sh</code>
+<code>0C2L2@github ~ $ ./whoami.sh</code>
 
 <br><br>
 
@@ -21,7 +21,7 @@
 
 <br>
 
-<code>YOUR_USERNAME@github ~ $ ./contributions.sh</code>
+<code>0C2L2@github ~ $ ./contributions.sh</code>
 
 <br><br>
 

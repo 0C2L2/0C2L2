@@ -2,10 +2,10 @@
 from pathlib import Path
 
 # --- Edit these ---------------------------------------------------------------
-GITHUB_USERNAME = "YOUR_USERNAME"
+GITHUB_USERNAME = "0C2L2"
 
 INFO_CARD = {
-    "user_host": "avi@github",
+    "user_host": "0C2L2@github",
     "fields": [
         ("Role",       "Software Engineer"),
         ("Stack",      "Python / TypeScript / Go"),
